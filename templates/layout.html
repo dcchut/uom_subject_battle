@@ -1,14 +1,14 @@
 $def with (content)
 <html>
 <head>
-	<title>university of melbourne subject battle - $content.title</title>
+	<title>uom subject battle - $content.title</title>
 	<link rel="stylesheet" href="/static/style.css" type="text/css"/>
 	$if content.jsfiles:
         $for f in content.jsfiles.split():
             <script type="text/javascript" src="$f"></script>
 </head>
 <div class="main" id="$content.body_id">
-	<b>university of melbourne <em>subject battle</em></b> - by <a href="http://dcc.nitrated.net/">dcchut</a><br />
+	<b>uom <em>subject battle</em></b> - by <a href="http://dcc.nitrated.net/">dcchut</a><br />
     $:content
 </div>
 </body>
