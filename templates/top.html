@@ -1,0 +1,18 @@
+$def with (subjects)
+$var title: top 10
+$var jsfiles: 
+$var body_id: main2
+
+<p>top 10:</p>
+$for subject in subjects:
+    $ rating = int(subject.rating)
+    $code:
+        # calculate which side we are on!
+        if (loop.parity == 'odd'):
+            side = 'left'
+        else:
+            side = 'right'
+    <div id="subject_$side" class="subject">
+    <p class="subjecttext" title="$subject.description">$subject.code - $subject.name ($rating)</p>
+    </div>
+scores are calculated using an ELO based system - <a href="/">back</a>

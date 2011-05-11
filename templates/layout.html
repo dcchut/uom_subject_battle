@@ -1,0 +1,15 @@
+$def with (content)
+<html>
+<head>
+	<title>university of melbourne subject battle - $content.title</title>
+	<link rel="stylesheet" href="/static/style.css" type="text/css"/>
+	$if content.jsfiles:
+        $for f in content.jsfiles.split():
+            <script type="text/javascript" src="$f"></script>
+</head>
+<div id="$content.body_id">
+    $:content
+</div>
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+$def with (subjects)
+$var title: which subject is better?
+$var jsfiles: http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js /static/keyboard.js
+$var body_id: main
+
+<p>which subject is <em>better</em>?</p>
+$for subject in subjects:
+    $ rating = int(subject.rating)
+    $code:
+        # calculate which side we are on!
+        if (loop.parity == 'odd'):
+            side = 'left'
+        else:
+            side = 'right'
+    <div id="subject_$side" class="subject">
+    <p class="subjecttext" title="$subject.description"><a href="/$side">$subject.code - $subject.name</a> ($rating)</p>
+    </div>
+<p>protip: use <em>g</em> to vote left and <em>h</em> to vote right - <a href="/top">top 10</a></p>

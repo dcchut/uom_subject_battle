@@ -1,0 +1,93 @@
+html { 
+	overflow: -moz-scrollbars-vertical;
+	overflow-x: auto; 
+}
+
+body {
+	background-color: #EEEFE6;
+	font: 12pt verdana;
+}
+
+#main {
+	width: 1500px;
+	height: 175px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25px;
+	padding-top: 10px;
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#main2 {
+	width: 1500px;
+	height: 560px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25px;
+	padding-top: 10px;
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.subject {
+    width: 725px;
+	margin: 10px;
+	margin-bottom: 25px;
+    padding: 0px;
+	border: 1px solid #000000;
+	background-color: #f6f6f6;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.subjecttext {
+    text-align: center;
+	font: 14pt verdana;
+	font-weight: bold;
+}
+
+.subject {
+    width: 725px;
+    height: 60px;
+	margin: 10px;
+	margin-bottom: 25px;
+    padding: 0px;
+	border: 1px solid #000000;
+	background-color: #f6f6f6;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#subject_left {
+	float: left;
+}
+
+#subject_right {
+	float: right;
+}
+
+/* make links <AWESOME> */
+a:link {
+	text-decoration: underline;
+	color: black;
+}
+
+a:visited {
+	text-decoration: underline;
+	color: black;
+}
+
+a:active {
+	text-decoration: underline;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline; 
+	color: red;
+}
