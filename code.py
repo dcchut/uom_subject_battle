@@ -2,12 +2,9 @@ import web
 import os
 import sys
 
-# wtf
 path = os.path.dirname(__file__)
 sys.path.append(path)
 os.chdir(path)
-
-# debug the shit out of it
 web.config.debug = True
 
 urls = (
@@ -65,7 +62,7 @@ class index:
 
 app     = web.application(urls, globals())
 render  = web.template.render('templates', base='layout')
-db		= web.database(dbn='sqlite', db='/home/dcc/subject_game/db')
+db	= web.database(dbn='sqlite', db='/home/dcc/subject_game/db')
 store   = web.session.DBStore(db, 'sessions')
 session = web.session.Session(app, store, initializer={'subjects':None})
 
