@@ -66,5 +66,4 @@ db	= web.database(dbn='sqlite', db='/home/dcc/subject_game/db')
 store   = web.session.DBStore(db, 'sessions')
 session = web.session.Session(app, store, initializer={'subjects':None})
 
-# what a bitch
 application = app.wsgifunc()
